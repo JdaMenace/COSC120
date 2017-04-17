@@ -1,0 +1,41 @@
+#include <iostream>
+#include <fstream>
+
+using namespace std;
+
+int main()
+{
+
+	char studentName[50];
+	int idNumber;
+	char address[50];
+
+
+	ofstream outFile;
+
+	outFile.open("P://student.dat");
+
+	outFile << "Justin DeMinnis" <<endl;
+	outFile << "xxxx754" <<endl;
+	outFile << "Goldsborough Street Salisbury MD" <<endl;
+
+	outFile.close();
+
+	ifstream inFile;
+
+	inFile.open("P://student.dat");
+
+	inFile.getline(studentname,50);
+	cout << studentName << endl;
+	infile >> idNumber;
+	cout << idNumber <<endl;
+	inFile.ignore();
+	inFile.getline(address,50);
+	cout << address <<endl;
+
+
+	inFile.close();
+
+	return 0;
+
+}
