@@ -31,10 +31,10 @@ int main()
 	cout << endl << "You input the numbers as " << firstNumber
 		 << " and " << secondNumber << endl;
 	
-    // Now we will swap the values.
+    	// Now we will swap the values.
 	
 	firstNumber = secondNumber;
-    secondNumber = firstNumber;
+    	secondNumber = firstNumber;
     
 	// Output the values.
 	
